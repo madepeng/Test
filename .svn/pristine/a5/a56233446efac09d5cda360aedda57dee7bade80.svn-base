@@ -1,0 +1,12 @@
+package com.test.multithread;
+
+public class Test {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+		System.out.println(Class.forName("com.test.multithread.Foo"));
+		System.out.println(Foo.class instanceof Object);
+		System.out.println((new Foo(1)).getClass().getMethods()[1]);
+	}
+
+}

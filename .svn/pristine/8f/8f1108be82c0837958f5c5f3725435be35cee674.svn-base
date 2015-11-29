@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="test/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/test"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/jsoup-1.8.2.jar" sourcepath="C:/Users/hope/Desktop/jsoup-1.8.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/hope/Desktop/jsoup-1.8.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/commons-codec-1.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/fluent-hc-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/httpclient-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/httpclient-cache-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/httpclient-win-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/httpcore-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/httpmime-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/jna-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/hope/Desktop/httpcomponents-client-4.4.1-bin/httpcomponents-client-4.4.1/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

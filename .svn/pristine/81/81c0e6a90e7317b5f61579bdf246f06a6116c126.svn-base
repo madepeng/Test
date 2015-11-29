@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="test/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/test"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/fluent-hc-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpclient-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpclient-cache-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpclient-win-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpcore-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpmime-4.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jna-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jna-platform-4.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jsoup-1.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/commons-beanutils-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/commons-collections.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/commons-lang.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/ezmorph.jar"/>
+	<classpathentry exported="true" kind="lib" path="JSONLibraries1/json-lib-2.2.2-jdk15.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-annotations-2.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-core-2.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-core-asl-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-databind-2.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-mapper-asl-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson/jackson-module-jaxb-annotations-2.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="gson-2.2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

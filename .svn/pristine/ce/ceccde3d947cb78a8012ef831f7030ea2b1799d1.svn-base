@@ -1,0 +1,6 @@
+package com.mianshi.souhu.access;
+
+public class T1 {
+	int x =1;
+
+}

@@ -1,0 +1,15 @@
+package com.mianshi.souhu.string;
+
+public class T {
+	public void fun(StringBuffer str) {
+		str = new StringBuffer("zhangbaizhi");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		T t = new T();
+		StringBuffer str = new StringBuffer("guomeimei");
+		t.fun(str);
+		System.out.println(str);
+	}
+
+}

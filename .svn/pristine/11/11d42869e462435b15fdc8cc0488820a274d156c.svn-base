@@ -1,0 +1,94 @@
+package com.test.jsoup;
+
+import java.io.File;
+import java.net.URL;
+
+import org.apache.commons.io.FileUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String html = "<p>An <a href='http://example.com/'><b>example</b></a> link.</p><p class='test' id= 't'></p><p class='test test1' id= 't1'></p><ul class='t1 t2'><li>咖啡</li><li>茶</li><li>牛奶</li></ul><ul class='t3 t4'><li>咖啡1</li><li>茶1</li><li>牛奶1</li></ul><span class='t5' datatime='t6'>ceshispan</span><a href='http://exampfdsfdsfle.com/'><b>example b b b </b></a>";
+		Document doc = Jsoup.parse(html);//解析HTML字符串返回一个Document实现
+	/*	Element link = doc.select("a").first();//查找第一个a元素
+		System.out.println(link);
+		
+		String text = doc.body().text(); // "An example link"//取得字符串中的文本
+		System.out.println(text);
+		
+		String linkHref = link.attr("href"); // "http://example.com/"//取得链接地址
+		System.out.println(linkHref);
+		
+		String linkText = link.text(); // "example""//取得链接地址中的文本
+		System.out.println(linkText);
+
+		String linkOuterH = link.outerHtml(); 
+		System.out.println(linkOuterH);
+		    // "<a href="http://example.com"><b>example</b></a>"
+		
+		
+		String linkInnerH = link.html(); // "<b>example</b>"//取得链接内的html内容
+		System.out.println(linkInnerH);*/
+		
+		/*System.out.println(doc.select("a[href]").attr("abs:href"));
+		System.out.println(doc.select("a[href]").attr("href"));*/
+		//System.out.println(doc.getElementById("t"));
+		//System.out.println(doc.select("#t"));
+		//System.out.println(doc.select(".test"));
+		//System.out.println(doc.select(".test").select(".test1"));
+		/*System.out.println(doc.getElementsByClass("test"));
+		System.out.println(doc.select("p.test"));
+		System.out.println(doc.select("p#t"));
+		System.out.println(doc.getElementsByAttributeValue("class", "test test1"));
+		System.out.println(doc.getElementsByClass("test test1"));*/
+		//System.out.println(doc.select("ul.t1").select(".t2"));
+	//	System.out.println(doc.getElementsByAttributeValue("class", "t1"));
+	//	System.out.println(doc.getElementsByClass("t1 t2"));
+	//	System.out.println(doc.getElementsByClass("test1"));
+	//	System.out.println(doc.select("a[href]").attr("href"));
+		//System.out.println(doc.select("href"));
+		//System.out.println(doc.select(".test"));
+		/*System.out.println(doc.select("span[class]"));
+		System.out.println(doc.select("span[datatime]"));
+		System.out.println(doc.select("a[href]"));
+		for (Element string : doc.select("a[href]")) {
+			System.out.println(string.attr("href"));
+		}*/
+		
+		String res = downloadFromUrl("http://apps.wandoujia.com/apps/com.moling.buyu10002.wdj/download","d:/");   
+        System.out.println(res);   
+    }   
+  
+  
+    public static String downloadFromUrl(String url,String dir) {   
+  
+        try {   
+            URL httpurl = new URL(url);   
+            String fileName = getFileNameFromUrl(url);   
+            System.out.println(fileName);   
+            File f = new File(dir + fileName);   
+            FileUtils.copyURLToFile(httpurl, f);   
+        } catch (Exception e) {   
+            e.printStackTrace();   
+            return "Fault!";   
+        }    
+        return "Successful!";   
+    }   
+       
+    public static String getFileNameFromUrl(String url){   
+        String name = new Long(System.currentTimeMillis()).toString() + ".X";   
+        int index = url.lastIndexOf("/");   
+        if(index > 0){   
+            name = url.substring(index + 1);   
+            if(name.trim().length()>0){   
+                return name;   
+            }   
+        }   
+        return name;   
+	}
+
+}
